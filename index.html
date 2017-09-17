@@ -1,124 +1,139 @@
 <!DOCTYPE HTML>
 <html lang="ja">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maxium-scale=1.0, minimum-scale=1.0, user-scalable=no">
-		<link rel="stylesheet" href="aokashibox.css">
-		<title>AokashiBox for Pukiwiki</title>
-	</head>
-	<body>
-		<header id="header">
-			<h1><a href="#">AokashiBox for Pukiwiki</a></h1>
-			<nav id="header_tool">
-				ここにツールバー一式が入ります
-			</nav>
-		</header>
-		<main id="main">
-			<div id="main_content">
-				<header id="main_content_header">
-					<nav id="main_content_header_topicpath">
-						<ul>
-							<li><a href="#">FrontPage</a></li>
-							<li>Here</li>
-						</ul>
-					</nav>
-					<h2>FrontPage</h2>
-				</header>
-				<article>
-					<p>AokashiBox for Pukiwikiです。</p>
-					<div class="contents">
-						<ul>
-							<li><a href="#">特徴</a>
-								<ul>
-									<li><a href="#">Iridを意識した作り</a></li>
-									<li><a href="#">HTML5の対応、モバイルフレンドリー</a>
-										<ul>
-											<li><a href="#">幅によるレイアウトの調整</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li><a href="#">テスト</a></li>
-						</ul>
-					</div>
-					<h3>特徴</h3>
-					<ul>
-						<li>Pukiwikiのスキン「Irid」を意識した作りです</li>
-						<li>HTML5に対応していますし、スマートフォン向きの調整を行ったモバイルフレンドリーなスキンです</li>
-					</ul>
-					<h4>Iridを意識した作り</h4>
-					<ul>
-						<li>メインのヘッダーにタイトルが付いています</li>
-						<li>ヘッダーの下に編集用のツールバーが入っていて、編集権限が無くても一部は使えます</li>
-						<li>メニューは基本的に横にあります</li>
-						<li>ページのタイトルはページ内容の上にあります</li>
-					</ul>
-					<h4>HTML5の対応、モバイルフレンドリー</h4>
-					<ul>
-						<li>HTML5、CSS3を使用しています</li>
-						<li>メディアクエリーを使って、幅を調整しています</li>
-					</ul>
-					<h5>幅によるレイアウトの調整</h5>
-					<table>
-						<thead>
-							<tr>
-								<th>幅</th>
-								<th>レイアウト</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>40文字-60文字</td>
-								<td>サイドバーが下部へ移動</td>
-							</tr>
-							<tr>
-								<td>60文字-80文字</td>
-								<td>サイドバーが左側へ移動</td>
-							</tr>
-							<tr>
-								<td>80文字-</td>
-								<td>幅が80文字固定</td>
-							</tr>
-						</tbody>
-					</table>
-					<h3>サンプル</h3>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maxium-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="aokashibox.css">
+    <title>AokashiBox for Pukiwiki</title>
+  </head>
+  <body>
+    <header class="l-header">
+      <div class="l-wrap">
+        <h1 class="l-header-title"><a href="#">AokashiBox for Pukiwiki</a></h1>
+        <nav class="l-header-tool menu is-inline">
+          <ul>
+            <li class="menus"><a href="#">新規</a></li>
+            <li class="menus"><a href="#">編集</a></li>
+            <li class="menus"><a href="#">凍結</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="l-main">
+      <div class="l-wrap">
+        <section class="l-main-content">
+          <header class="l-main-content-header">
+            <nav class="topicpath">
+              <div><a href="#">FrontPage</a> / Here</div>
+            </nav>
+          </header>
+          <article class="l-doc">
+            <h2>AokashiBox</h2>
+            <p>AokashiBoxです。</p>
+            <div class="contents">
+              <ul>
+                <li><a href="#">特徴</a>
+                  <ul>
+                    <li><a href="#">Iridを意識した作り</a></li>
+                    <li><a href="#">HTML5の対応、モバイルフレンドリー</a>
+                      <ul>
+                        <li><a href="#">幅によるレイアウトの調整</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#">テスト</a></li>
+              </ul>
+            </div>
+            <h3>特徴</h3>
+            <ul>
+              <li>Pukiwikiのスキン「Irid」を意識した作りです</li>
+              <li>HTML5に対応していますし、スマートフォン向きの調整を行ったモバイルフレンドリーなスキンです</li>
+            </ul>
+            <h4>Iridを意識した作り</h4>
+            <ul>
+              <li>メインのヘッダーにタイトルが付いています</li>
+              <li>ヘッダーの下に編集用のツールバーが入っていて、編集権限が無くても一部は使えます</li>
+              <li>メニューは基本的に横にあります</li>
+              <li>ページのタイトルはページ内容の上にあります</li>
+            </ul>
+            <h4>HTML5の対応、モバイルフレンドリー</h4>
+            <ul>
+              <li>HTML5、CSS3を使用しています</li>
+              <li>メディアクエリーを使って、幅を調整しています</li>
+            </ul>
+            <h4>スマートCSS</h4>
+            <p>CSSは初期化としてnormalize.cssを使用しています。CSSの命名規則はAokashiBaseと同じくSMACSSを利用しています。目次や脚注は共通のパーツで済むため、モジュールのasideクラスでまとめています。無限にセレクタを増やさない設計を目指しています。</p>
+            <h4>幅によるレイアウトの調整</h4>
+            <table>
+              <thead>
+                <tr>
+                  <th>幅</th>
+                  <th>レイアウト</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>40文字-60文字</td>
+                  <td>サイドバーが下部へ移動</td>
+                </tr>
+                <tr>
+                  <td>60文字-80文字</td>
+                  <td>サイドバーが左側へ移動</td>
+                </tr>
+                <tr>
+                  <td>80文字-</td>
+                  <td>幅が80文字固定</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3>サンプル</h3>
 <pre>整形済みテキスト整形済みテキスト整形済みテキスト
 整形済みテキスト整形済みテキスト整形済みテキスト</pre>
-					<p><span style="color:#993333"> 色の変更も可能なルール(COLOR(#993333)) </span></p>
-					<p><span style="font-size:10px"> サイズの変更も可能なルール(SIZE(10)) </span></p>
-					<p><span style="font-size:20px"> <span style="color:#333399"> 両方指定(SIZE(20)COLOR(#333399)) </span> </span></p>
-					<p><del>打ち消し線</del></p>
-					<p>左寄せ</p>
-					<div style="text-align:center">中寄せ</div>
-					<div style="text-align:right">右寄せ</div>
-				</article>
-				<aside id="main_content_note">
-					<span>[1]:注釈のサンプル</span>
-				</aside>
-				<aside id="main_content_attach">
-					<span>添付のサンプル</span>
-				</aside>
-			</div>
-			<aside id="main_sidebar">
-				<h2>サイドバー</h2>
-				<ul>
-					<li><a href="#">Item 1</a></li>
-					<li><a href="#">Item 2</a></li>
-					<li><a href="#">Item 3</a></li>
-				</ul>
-				<h2>最近の更新</h2>
-				<ul>
-					<li><a href="#">Item 1</a></li>
-					<li><a href="#">Item 2</a></li>
-					<li><a href="#">Item 3</a></li>
-				</ul>
-			</aside>
-		</main>
-		<footer id="footer">
-			<div id="footer_copyright">
-				<p>Copyright © 2015 Aokashi All righs reserved.</p>
-				<p>Powerd By Pukiwiki 1.5.0.</p>
-			</div>
-		</footer>
-	</body>
+            <p><span style="color:#993333"> 色の変更も可能なルール(COLOR(#993333)) </span></p>
+            <p><span style="font-size:10px"> サイズの変更も可能なルール(SIZE(10)) </span></p>
+            <p><span style="font-size:20px"> <span style="color:#333399"> 両方指定(SIZE(20)COLOR(#333399)) </span> </span></p>
+            <p><del>打ち消し線</del></p>
+            <p>左寄せ</p>
+            <div style="text-align:center">中寄せ</div>
+            <div style="text-align:right">右寄せ</div>
+          </article>
+          <footer class="l-main-content-footer">
+            <ul>
+              <li>Last Modified: (更新日付)</li>
+            </ul>
+            <aside class="aside is-note">
+              <span>[1]:注釈のサンプル</span>
+            </aside>
+            <aside class="aside is-attach">
+              <span>添付のサンプル</span>
+            </aside>
+          </footer>
+        </section>
+        <aside class="l-main-sidebar l-doc">
+          <h2>サイドバー</h2>
+          <ul>
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+          </ul>
+          <h2>最近の更新</h2>
+          <ul>
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+          </ul>
+        </aside>
+      </div>
+    </main>
+    <footer class="l-footer">
+      <div class="l-wrap">
+        <div class="l-footer-copyright">
+          <p>Copyright © 2010-2017 Aokashi.</p>
+          <p>Powerd By Pukiwiki 1.5.0.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
