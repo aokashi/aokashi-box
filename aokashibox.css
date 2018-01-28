@@ -507,7 +507,8 @@ body {
     }
 
     .l-main-sidebar {
-      flex: 0 0 10rem;
+      flex: 0 0 11rem;
+      word-break: break-all;
     }
     
   .l-main-sidebar input,
