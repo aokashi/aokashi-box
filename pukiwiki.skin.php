@@ -27,8 +27,8 @@ header('Content-Type: text/html; charset=' . CONTENT_CHARSET);
     <meta charset="UTF-8">
     <?php if($nofollow || !$is_read) : ?><meta name="robots" content="NOINDEX,NOFOLLOW"><?php endif; ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="skin/normalize.css">
-    <link rel="stylesheet" href="skin/aokashibox.css">
+    <link rel="stylesheet" href="<?php echo SKIN_DIR ?>normalize.css">
+    <link rel="stylesheet" href="<?php echo SKIN_DIR ?>aokashibox.css">
     <?php if(!empty($image['favicon'])) : ?><link rel="icon" type="image/vnd.microsoft.icon" href="<?php echo $image['favicon'] ?>"><?php endif; ?>
     <link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo $link['rss'] ?>">
     <title><?php if(!$is_home) : echo $title . ' - '; endif; ?><?php echo $page_title; ?></title>
